@@ -1,42 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>leafhuy's Blogg</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <h1>LEAF - GIP SINH HUY</h1>
-    <nav>
-      <a href="#about">Giới thiệu</a>
-      <a href="#projects">Dự án</a>
-      <a href="#contact">Liên hệ</a>
-    </nav>
-  </header>
 
-  <section id="about" class="intro">
-    <img src="image/Avatar.png" alt="Ảnh cá nhân" class="avatar">
-    <h2>Xin chào 👋</h2>
-    <p>YOO!!! Điều gì mang bạn tới đây – mình là Huy - leaf một Front-End Developer đam mê sáng tạo và yêu thích lập trình web.</p>
-  </section>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leafshy's Blogg</title>
 
-  <section id="projects" class="projects">
-    <h2>Dự án của tôi 💼</h2>
-    <div id="project-list" class="project-list"></div>
-  </section>
+    <link rel="stylesheet" href="utils/css/style.css">
+    <link rel="stylesheet" href="utils/css/fontsheet.css">
 
-  <section id="contact" class="contact">
-    <h2>Liên hệ 📬</h2>
-    <p>Email: <a href="mailto:giphuy159@gmail.com">giphuy159@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/leafhuy" target="_blank">https://github.com/leafhuy</a></p>
-  </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
 
-  <footer>
-    <p>© 2025 Gip Sinh Huy</p>
-  </footer>
+  <body>
+    <header class = "header" id = "top">
+      <div class ="container">
+        <div class = "row">
+          <div class = "header-inner">
+            <div class="logo">
+              <a class = "logo-page-link" href="index.html">
+                <img src="../assets/image/Logo.png"  class = "logo-img">LEAF
+              </a>
+            </div>
+            <div class ="navA">
+                <a href="#about">About</a>
+                <a href="#projects">Project</a>
+                <a href="#contact">Contact</a>
+                <a href="../assets/docs/GipSinhHuy_CV_EmdeddedEngineer.pdf" class="cv-button" download>Resume</a>
+                <button id="theme-toggle" class="theme-btn">🌙</button>
+            </div>
+          </div>
+      </div>
+      </div>
+      
+    </header>
 
-  <script src="js/main.js"></script>
-</body>
+    <main class = "content">
+      <section id="about" class="intro">
+        <div class = "container">
+          <div class ="row">
+            <div class = "col col-12">
+              <div class = "intro-inner">
+                <div class = "inner-left">
+                  <h1 class = "title">YEP! THAT'S ME</h1>
+                  <p class = "desciption">With T POSE</p>
+                </div>
+                <div class = "inner-right">
+                  <img src="assets/image/IMG_9873.png" alt="Picture" class="avatar">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <section id="projects" class="projects">
+        <div class = "container">
+          <div id="project-list" class="project-list"></div>
+        </div>
+      </section>
+
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Feel free to contact me 📬</h2>
+          <p>
+            <a href="https://github.com/leafhuy"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/sinh-huy-g%E1%BB%8Bp-019965347"><ion-icon name = "logo-linkedin"></ion-icon> </a>
+          </p>
+
+      </section>
+    </main>
+
+    <footer>
+      <p>2025© Gip Sinh Huy</p>
+    </footer>
+
+    <script src="utils/js/main.js"></script>
+  </body>
 </html>

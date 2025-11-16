@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'BBH Sans Hegarty';
+    src: url('../../assets/fonts/BBH_Sans_Hegarty/BBHSansHegarty-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/BBH_Sans_Hegarty/BBHSansHegarty-Regular.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Audiowide';
+    src: url('../../assets/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+  font-family: "Audiowide";
+  font-weight: 400;
+  font-display: swap;
+}

@@ -1,0 +1,223 @@
+/* =============== GLOBAL GRID =============== */
+
+.container {
+    max-width: 1140px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.col {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* =============== BODY =============== */
+
+body {
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body.dark {
+  background: #121212;
+  color: #e5e5e5;
+  ion-icon {
+    color: white;
+  }
+  .project-card{
+    color: white;
+    background-color: #222;
+  }
+}
+
+.theme-btn {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+  margin-left: 20px;
+}
+
+.theme-btn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* =============== HEADER =============== */
+header {
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 20px 0; /* chỉ padding trên/dưới, không để padding trái/phải */
+  box-sizing: border-box;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between; /* logo trái, nav phải */
+  align-items: center;
+  width: 100%;    /* chiếm toàn bộ header */
+  padding: 0 16px; /* padding trái/phải tùy ý */
+  box-sizing: border-box;
+}
+
+.logo-page-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo-img {
+    width: 40px;
+    height: auto;
+}
+
+.navA a {
+    align-items: right;
+    margin-left: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* =============== INTRO SECTION =============== */
+
+.intro-inner {
+    display: flex;
+    justify-content: space-between; /* cách đều left – right */
+    align-items: center;
+    gap: 40px; /* khoảng cách đẹp hơn */
+    padding: 60px 0;
+}
+
+.inner-left {
+    flex: 1; /* mỗi bên chiếm một nửa */
+}
+
+.inner-right {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* căn giữa hình */
+}
+
+.avatar {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* ============== Project Section ==========*/
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #222;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.project-img-wrapper {
+  width: 100%;
+  height: 150px;        /* chiều cao khung cắt */
+  overflow: hidden;      /* phần thừa bị che */
+  border-radius: 10px;
+}
+
+.project-img-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;     /* ảnh tự co giãn cho khớp khung */
+  object-position: center top; /* chọn phần hiển thị của ảnh */
+}
+
+.project-card h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.project-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%; /* card rộng hơn trên màn hình nhỏ */
+  }
+}
+
+
+/* =============== FOOTER =============== */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* =============== RESPONSIVE =============== */
+
+@media (max-width: 746px) {
+    .intro-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inner-left,
+    .inner-right {
+        width: 100%;
+    }
+
+    .avatar {
+        max-width: 500px;
+    }
+}
+
+
+/*==========ICON============*/
+ion-icon {
+  font-size: 32px;
+  color: black;
+}
